@@ -1,0 +1,75 @@
+//grid variables
+
+$grid-columns: 12;
+$grid-max-width: 65em;
+
+//breakpoints
+$breakpoint-small: "only screen and (min-width: 20em)";
+$breakpoint-medium: "only screen and (min-width: 37em)";
+
+//colors
+
+$color-list: (
+  color-primary: #d8f5e8,
+  color-secondary: #2accc3,
+  color-tertiary: #ffbc17,
+  color-accent: #ff623f
+);
+
+// $colors: (
+$color-primary: (
+  color-hex: map-get($color-list, color-primary),
+  color-name: "Mint",
+  color-rgb: "217 / 245 / 232",
+  color-hsl: "152deg / 50% / 91%",
+  light: lighten(map-get($color-list, color-primary), 5%),
+  dark: darken(map-get($color-list, color-primary), 5%)
+);
+
+$color-secondary: (
+  color-hex: map-get($color-list, color-secondary),
+  color-name: "Teal",
+  color-rgb: "55 / 203 / 194",
+  color-hsl: "176deg / 59% / 51%",
+  light: lighten(map-get($color-list, color-secondary), 5%),
+  dark: darken(map-get($color-list, color-secondary), 5%)
+);
+
+
+$color-tertiary: (
+  color-hex: map-get($color-list, color-tertiary),
+  color-name: "Gold",
+  color-rgb: "255 / 187 / 51",
+  color-hsl: "400deg / 100% / 60%",
+  light: lighten(map-get($color-list, color-tertiary), 5%),
+  dark: darken(map-get($color-list, color-tertiary), 5%)
+);
+
+$color-accent: (
+  color-hex: map-get($color-list, color-accent),
+  color-name: "Tomato",
+  color-rgb: "255 / 99 / 71",
+  color-hsl: "9deg / 10%% / 64%",
+  light: lighten(map-get($color-list, color-accent), 5%),
+  dark: darken(map-get($color-list, color-accent), 5%)
+);
+
+//This is an @each loop that lightens and darkens colors. Written by Dani!!
+//
+// $colors-list: red #2accc3 #333 #444 #555;
+//
+//
+//
+//
+// @each $current-color in $colors-list {
+//     $i: index($colors-list, $current-color);
+//     .stuff-#{$i} {
+//         background-color: $current-color;
+//     }
+//       .light-#{$i} {
+//         color: lighten($current-color, 30%);
+//     }
+//       .dark-#{$i} {
+//         color: darken($current-color, 30%);
+//     }
+// }

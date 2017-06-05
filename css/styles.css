@@ -1,0 +1,158 @@
+.wrapper, .row {
+  *zoom: 1; }
+  .wrapper:before, .row:before, .wrapper:after, .row:after {
+    content: " ";
+    display: table; }
+  .wrapper:after, .row:after {
+    clear: both; }
+
+/*BASE STYLES*/
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif; }
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto !important; }
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto; }
+
+[class*='column-'] {
+  float: left;
+  padding: 1em;
+  width: 100%;
+  min-height: 1px; }
+
+.swatch {
+  height: 100px; }
+
+.color-primary .swatch {
+  background-color: #d8f5e8; }
+.color-primary .label-name:after {
+  content: "Mint"; }
+.color-primary .label-rgb:after {
+  content: "217 / 245 / 232"; }
+.color-primary .label-hsl:after {
+  content: "152deg / 50% / 91%"; }
+
+.color-secondary .swatch {
+  background-color: #2accc3; }
+.color-secondary .label-name:after {
+  content: "Teal"; }
+.color-secondary .label-rgb:after {
+  content: "55 / 203 / 194"; }
+.color-secondary .label-hsl:after {
+  content: "176deg / 59% / 51%"; }
+
+.color-tertiary .swatch {
+  background-color: #ffbc17; }
+.color-tertiary .label-name:after {
+  content: "Gold"; }
+.color-tertiary .label-rgb:after {
+  content: "255 / 187 / 51"; }
+.color-tertiary .label-hsl:after {
+  content: "400deg / 100% / 60%"; }
+
+.color-accent .swatch {
+  background-color: #ff623f; }
+.color-accent .label-name:after {
+  content: "Tomato"; }
+.color-accent .label-rgb:after {
+  content: "255 / 99 / 71"; }
+.color-accent .label-hsl:after {
+  content: "9deg / 10%% / 64%"; }
+
+/*TINT SECTION*/
+.tint-section {
+  height: 100px; }
+
+#tint-primary .tint-section1 {
+  background-color: #ecfaf4; }
+
+#tint-primary .tint-section2 {
+  background-color: #d8f5e8; }
+
+#tint-primary .tint-section3 {
+  background-color: #c4f0dc; }
+
+#tint-secondary .tint-section1 {
+  background-color: #64dfd8; }
+
+#tint-secondary .tint-section2 {
+  background-color: #2accc3; }
+
+#tint-secondary .tint-section3 {
+  background-color: #26b7af; }
+
+#tint-tertiary .tint-section1 {
+  background-color: #ffcb4a; }
+
+#tint-tertiary .tint-section2 {
+  background-color: #ffbc17; }
+
+#tint-tertiary .tint-section3 {
+  background-color: #fdb400; }
+
+#tint-accent .tint-section1 {
+  background-color: #ff8c72; }
+
+#tint-accent .tint-section2 {
+  background-color: #ff623f; }
+
+#tint-accent .tint-section3 {
+  background-color: #ff4d26; }
+
+/*Media Queries*/
+@media only screen and (min-width: 37em) {
+  .wrapper {
+    width: 95%;
+    max-width: 65em; }
+
+  .column-1 {
+    width: 8.33333%; }
+
+  .column-2 {
+    width: 16.66667%; }
+
+  .column-3 {
+    width: 25%; }
+
+  .column-4 {
+    width: 33.33333%; }
+
+  .column-5 {
+    width: 41.66667%; }
+
+  .column-6 {
+    width: 50%; }
+
+  .column-7 {
+    width: 58.33333%; }
+
+  .column-8 {
+    width: 66.66667%; }
+
+  .column-9 {
+    width: 75%; }
+
+  .column-10 {
+    width: 83.33333%; }
+
+  .column-11 {
+    width: 91.66667%; }
+
+  .column-12 {
+    width: 100%; } }
+
+/*# sourceMappingURL=styles.css.map */

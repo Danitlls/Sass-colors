@@ -1,0 +1,184 @@
+//IMPORTS
+
+@import 'variables';
+@import 'mixins';
+
+/*BASE STYLES*/
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  @include border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto !important;
+    }
+
+    .wrapper {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .wrapper, .row {
+        @extend %clearfix;
+        }
+
+    [class*='column-'] {
+      float: left;
+      padding: 1em;
+      width: 100%;
+      min-height: 1px;
+    }
+
+    .swatch {
+      height: 100px;
+    }
+
+// Trying to float the label values right...
+    // [class*='label-']:after {
+    //     float: right;
+    //     margin: 0 20%;
+    //     color: red;
+    // }
+
+    .color-primary {
+      .swatch {
+        background-color: map-get($color-primary,  color-hex);
+      }
+      .label-name:after{
+        content:  map-get($color-primary,  color-name);
+      }
+      .label-rgb:after{
+        content: map-get($color-primary, color-rgb);
+      }
+      .label-hsl:after {
+        content: map-get($color-primary, color-hsl);
+      }
+    }
+
+    .color-secondary {
+      .swatch {
+        background-color: map-get($color-secondary, color-hex);
+      }
+      .label-name:after {
+        content: map-get($color-secondary, color-name);
+      }
+      .label-rgb:after {
+        content: map-get($color-secondary, color-rgb);
+      }
+      .label-hsl:after {
+        content: map-get($color-secondary, color-hsl);
+      }
+    }
+
+    .color-tertiary {
+      .swatch {
+        background-color: map-get($color-tertiary, color-hex);
+      }
+      .label-name:after  {
+        content: map-get($color-tertiary, color-name);
+      }
+      .label-rgb:after {
+        content: map-get($color-tertiary, color-rgb);
+      }
+      .label-hsl:after {
+        content: map-get($color-tertiary, color-hsl);
+      }
+    }
+
+    .color-accent {
+      .swatch {
+        background-color: map-get($color-accent, color-hex);
+      }
+      .label-name:after  {
+        content: map-get($color-accent, color-name);
+      }
+      .label-rgb:after {
+        content: map-get($color-accent, color-rgb);
+      }
+      .label-hsl:after {
+        content: map-get($color-accent, color-hsl);
+      }
+    }
+
+/*TINT SECTION*/
+
+.tint-section {
+  height: 100px;
+}
+
+//First tint
+#tint-primary .tint-section1 {
+   background-color: map-get($color-primary, light);
+}
+
+#tint-primary .tint-section2 {
+  background-color: map-get($color-primary, color-hex);
+}
+
+#tint-primary .tint-section3 {
+  background-color: map-get($color-primary, dark);
+}
+
+//Second tint
+#tint-secondary .tint-section1 {
+  background-color: lighten(map-get($color-secondary, color-hex), 15%);
+}
+
+#tint-secondary .tint-section2 {
+  background-color: map-get($color-secondary, color-hex);
+}
+
+#tint-secondary .tint-section3 {
+  background-color: darken(map-get($color-secondary, color-hex), 5%);
+}
+
+//Third tint
+#tint-tertiary .tint-section1 {
+  background-color: lighten(map-get($color-tertiary, color-hex), 10%);
+}
+
+#tint-tertiary .tint-section2 {
+  background-color: map-get($color-tertiary, color-hex);
+}
+
+#tint-tertiary .tint-section3 {
+  background-color: darken(map-get($color-tertiary, color-hex), 5%);
+}
+
+//Fourth tint
+#tint-accent .tint-section1 {
+  background-color: lighten(map-get($color-accent, color-hex), 10%);
+}
+
+#tint-accent .tint-section2 {
+  background-color: map-get($color-accent, color-hex);
+}
+
+#tint-accent .tint-section3 {
+  background-color: darken(map-get($color-accent, color-hex), 5%);
+}
+
+    /*Media Queries*/
+
+    @media #{$breakpoint-medium} {
+      .wrapper {
+        width: 95%;
+        max-width: $grid-max-width;
+        }
+
+      @for $i from 1 through $grid-columns {
+        .column-#{$i} {
+          width: 100% / $grid-columns * $i;
+        }
+      }
+    }
