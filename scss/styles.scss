@@ -41,6 +41,7 @@ img {
 
     .swatch {
       height: 100px;
+      margin-bottom: 5%;
     }
 
 // Trying to float the label values right...
@@ -168,6 +169,134 @@ img {
   background-color: darken(map-get($color-accent, color-hex), 5%);
 }
 
+
+/*GENERATED COLORSS SECTION*/
+.mixed {
+  height: 50px;
+}
+
+
+.primary-mixed1 {
+  background-color: mix(map-get($color-list, color-primary), (map-get($color-list, color-primary)), 35%);
+}
+.percentages-primary:after {
+  content: map-get($color-primary, color-name);
+}
+
+.primary-mixed2 {
+  background-color: mix(map-get($color-list, color-primary), (map-get($color-list, color-secondary)), 35%);
+}
+.percentages-secondary:after {
+  content: map-get($color-secondary, color-name);
+}
+
+.primary-mixed3 {
+  background-color: mix(map-get($color-list, color-primary), (map-get($color-list, color-tertiary)), 35%);
+}
+.percentages-tertiary:after {
+  content: map-get($color-tertiary, color-name);
+}
+
+.primary-mixed4 {
+  background-color: mix(map-get($color-list, color-primary), (map-get($color-list, color-accent)), 35%);
+}
+.percentages-accent:after {
+  content: map-get($color-accent, color-name);
+}
+
+/*GENERATED COLORSS SECTION secondary*/
+
+
+.secondary-mixed1 {
+  background-color: mix(map-get($color-list, color-secondary), (map-get($color-list, color-primary)), 35%);
+}
+.percentages-primary:after {
+  content: map-get($color-primary, color-name);
+}
+
+.secondary-mixed2 {
+  background-color: mix(map-get($color-list, color-secondary), (map-get($color-list, color-secondary)), 35%);
+}
+.percentages-secondary:after {
+  content: map-get($color-secondary, color-name);
+}
+
+.secondary-mixed3 {
+  background-color: mix(map-get($color-list, color-secondary), (map-get($color-list, color-tertiary)), 35%);
+}
+.percentages-tertiary:after {
+  content: map-get($color-tertiary, color-name);
+}
+
+.secondary-mixed4 {
+  background-color: mix(map-get($color-list, color-secondary), (map-get($color-list, color-accent)), 35%);
+}
+.percentages-accent:after {
+  content: map-get($color-accent, color-name);
+}
+
+/*GENERATED COLORSS SECTION tertiary*/
+
+
+.tertiary-mixed1 {
+  background-color: mix(map-get($color-list, color-tertiary), (map-get($color-list, color-primary)), 35%);
+}
+.percentages-primary:after {
+  content: map-get($color-primary, color-name);
+}
+
+.tertiary-mixed2 {
+  background-color: mix(map-get($color-list, color-tertiary), (map-get($color-list, color-secondary)), 35%);
+}
+.percentages-secondary:after {
+  content: map-get($color-secondary, color-name);
+}
+
+.tertiary-mixed3 {
+  background-color: mix(map-get($color-list, color-tertiary), (map-get($color-list, color-tertiary)), 35%);
+}
+.percentages-tertiary:after {
+  content: map-get($color-tertiary, color-name);
+}
+
+.tertiary-mixed4 {
+  background-color: mix(map-get($color-list, color-tertiary), (map-get($color-list, color-accent)), 35%);
+}
+.percentages-accent:after {
+  content: map-get($color-accent, color-name);
+}
+
+
+/*GENERATED COLORSS SECTION accent*/
+
+
+.accent-mixed1 {
+  background-color: mix(map-get($color-list, color-accent), (map-get($color-list, color-primary)), 35%);
+}
+.percentages-primary:after {
+  content: map-get($color-primary, color-name);
+}
+
+.accent-mixed2 {
+  background-color: mix(map-get($color-list, color-accent), (map-get($color-list, color-secondary)), 35%);
+}
+.percentages-secondary:after {
+  content: map-get($color-secondary, color-name);
+}
+
+.accent-mixed3 {
+  background-color: mix(map-get($color-list, color-accent), (map-get($color-list, color-tertiary)), 35%);
+}
+.percentages-tertiary:after {
+  content: map-get($color-tertiary, color-name);
+}
+
+.accent-mixed4 {
+  background-color: mix(map-get($color-list, color-accent), (map-get($color-list, color-accent)), 35%);
+}
+.percentages-accent:after {
+  content: map-get($color-accent, color-name);
+}
     /*Media Queries*/
 
     @media #{$breakpoint-medium} {

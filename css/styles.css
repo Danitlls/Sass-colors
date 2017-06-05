@@ -35,7 +35,8 @@ img {
   min-height: 1px; }
 
 .swatch {
-  height: 100px; }
+  height: 100px;
+  margin-bottom: 5%; }
 
 .color-primary .swatch {
   background-color: #d8f5e8; }
@@ -112,6 +113,109 @@ img {
 
 #tint-accent .tint-section3 {
   background-color: #ff4d26; }
+
+/*GENERATED COLORSS SECTION*/
+.mixed {
+  height: 50px; }
+
+.primary-mixed1 {
+  background-color: #d8f5e8; }
+
+.percentages-primary:after {
+  content: "Mint"; }
+
+.primary-mixed2 {
+  background-color: #67dad0; }
+
+.percentages-secondary:after {
+  content: "Teal"; }
+
+.primary-mixed3 {
+  background-color: #f1d060; }
+
+.percentages-tertiary:after {
+  content: "Gold"; }
+
+.primary-mixed4 {
+  background-color: #f1957a; }
+
+.percentages-accent:after {
+  content: "Tomato"; }
+
+/*GENERATED COLORSS SECTION secondary*/
+.secondary-mixed1 {
+  background-color: #9be7db; }
+
+.percentages-primary:after {
+  content: "Mint"; }
+
+.secondary-mixed2 {
+  background-color: #2accc3; }
+
+.percentages-secondary:after {
+  content: "Teal"; }
+
+.secondary-mixed3 {
+  background-color: #b4c253; }
+
+.percentages-tertiary:after {
+  content: "Gold"; }
+
+.secondary-mixed4 {
+  background-color: #b4876d; }
+
+.percentages-accent:after {
+  content: "Tomato"; }
+
+/*GENERATED COLORSS SECTION tertiary*/
+.tertiary-mixed1 {
+  background-color: #e6e19f; }
+
+.percentages-primary:after {
+  content: "Mint"; }
+
+.tertiary-mixed2 {
+  background-color: #75c687; }
+
+.percentages-secondary:after {
+  content: "Teal"; }
+
+.tertiary-mixed3 {
+  background-color: #ffbc17; }
+
+.percentages-tertiary:after {
+  content: "Gold"; }
+
+.tertiary-mixed4 {
+  background-color: #ff8231; }
+
+.percentages-accent:after {
+  content: "Tomato"; }
+
+/*GENERATED COLORSS SECTION accent*/
+.accent-mixed1 {
+  background-color: #e6c2ad; }
+
+.percentages-primary:after {
+  content: "Mint"; }
+
+.accent-mixed2 {
+  background-color: #75a795; }
+
+.percentages-secondary:after {
+  content: "Teal"; }
+
+.accent-mixed3 {
+  background-color: #ff9d25; }
+
+.percentages-tertiary:after {
+  content: "Gold"; }
+
+.accent-mixed4 {
+  background-color: #ff623f; }
+
+.percentages-accent:after {
+  content: "Tomato"; }
 
 /*Media Queries*/
 @media only screen and (min-width: 37em) {
