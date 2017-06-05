@@ -1,21 +1,11 @@
-// $variations: (
-//   light: (
-//     function: lighten,
-//     parameters: 15%
-//   ),
-//   dark: (
-//     function: darken,
-//     parameters: 10%
-//   ),
-//   fade: (
-//     function: rgba,
-//     parameters: .7
-//   ),
-//   gray: (
-//     function: grayscale
-//   ),
-//   shade: (
-//     function: mix,
-//     parameters: white 80%
-//   )
-// );
+// @function mixColors ($color1, $color2, $percentage) {
+//   @return mix(map-get($color-list, $color1),(map-get($color-list, $color2)), 25%);
+// }
+
+@function mixColors ($color1: map-get($color-list, color-primary), $color2: map-get($color-list, color-primary)) {
+  @return map-get(map-get($color1, $color2), $percentage);
+}
+
+// @function palette($palette, $tone: 'base') {
+//     @return map-get(map-get($palettes, $palette), $tone);
+// }

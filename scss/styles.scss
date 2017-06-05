@@ -174,7 +174,14 @@ img {
 .mixed {
   height: 50px;
 }
+//
+// .primary-mixed1 {
+//   background-color: mix-colors(map-get($color-list, color-primary), (map-get($color-list, color-secondary)), $percentage);
+// }
 
+// .primary-mixed1 {
+//   background-color: mixColors($color-primary, $color-secondary, 35%);
+// }
 
 .primary-mixed1 {
   background-color: mix(map-get($color-list, color-primary), (map-get($color-list, color-primary)), 35%);
